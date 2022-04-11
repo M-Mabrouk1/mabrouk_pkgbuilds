@@ -1,6 +1,6 @@
 pkgname=flatery-customized-git
 _pkgname=flatery-customized
-pkgver=05.04
+pkgver=0.1
 pkgrel=01
 _destname1="/usr/share/icons/"
 # _destname2="/usr/share/plasma/"
