@@ -10,10 +10,7 @@
 echo "Checking for newer files online first"
 git pull
 
-sh ./build-db.sh
-cd x86_64
-# Below command will backup everything inside the project folder
-cd ..
+
 git add --all .
 
 Give a comment to the commit if you want
@@ -26,7 +23,7 @@ read input
 
 # Committing to the local repository with a message containing the time details and commit text
 
-git commit -m "$input"
+git commit -S -m "$input"
 
 # Push the local files to github
 
