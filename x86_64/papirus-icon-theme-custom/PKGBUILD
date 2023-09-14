@@ -1,17 +1,15 @@
-# Contributor: Muhammad Mabrouk <MuhammadMabrouk@gmail.com>
-
-pkgname=python-portio
-pkgver=0.5
+pkgname=papirus-icon-theme-custom
+pkgver=20230914.0
 pkgrel=1
-pkgdesc='PortIO, python low level port I/O for Linux x86'
-url='https://pypi.org/project/portio/'
-license=(GPL)
-arch=('x86_64')
-depends=(python)
-source=(https://files.pythonhosted.org/packages/6f/2c/ecd9ed70555b8dc08a1b24a448b13cb77ff2c19e39df25fe9d22816d192d/portio-$pkgver.tar.gz)
-sha256sums=('SKIP')
+pkgdesc="Papirus icon theme custom"
+arch=('any')
+url="https://github.com/M-Mabrouk1/papirus-icon-theme-custom"
+license=("GPL3")
+depends=('gtk-update-icon-cache')
+source=("https://github.com/M-Mabrouk1/$pkgname/archive/$pkgver/$pkgname-$pkgver.tar.gz")
+sha512sums=('SKIP')
 
 package() {
-  cd portio-$pkgver
-  python setup.py install --root="$pkgdir" --optimize=1
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install
 }
