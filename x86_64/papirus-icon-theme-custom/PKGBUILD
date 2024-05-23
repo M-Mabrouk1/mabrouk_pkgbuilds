@@ -1,5 +1,5 @@
 pkgname=papirus-icon-theme-custom
-pkgver=20231113.0
+pkgver=20240523.0
 pkgrel=1
 pkgdesc="Papirus icon theme custom"
 arch=('any')
